@@ -6,6 +6,7 @@ date: 2017
 ---
 
 # About
+Due to the rapid development in Information Technology (IT), knowing what skills are trending in the job market can not only help job seekers equip themselves with proper competencies but also help training and education association improve their training curricula. In this paper, we collected IT job advertisements (job ads) from an online job board and applied methods from natu- ral language processing and trend detection on job titles and job descriptions to identify trending skills. We found that “Cloud Com- puting" is a trending skill for IT job from the results of all analysis. Also, there are more and more job ads that listed the requirement of business skills. In addition to investigating trending skills in the context of job ads, we also inserted these skills into Google Trends to see whether these skills are also trendy in the context of the public’s interests. The comparison between Google Trends and job ads shows that a trend in the job market is not necessarily considered as a trend in the public’s interests. We believe that our pipeline of how to analyze job ads can help the subsequent studies to better process the job ads and detect trending jobs and skills. The mismatch between Google Trends and job ads also shows the information gap between what people think the companies require and what the companies actually want.
 
 # Introduction
 
@@ -17,6 +18,11 @@ date: 2017
 # Descriptive Analysis on Job Ads
 
 ## Data Collection
+
+**Year** | **# Job** | **# Source** | **Location** | **Collection Period**
+--- | --- | --- | --- | --- |
+2013 | 65,795 | Kaggle | The UK | all year
+2017 | 13,757 | Adzuna | The UK | March - May
 
 ## Job Title Analysis and Normalization
 This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
