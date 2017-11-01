@@ -11,6 +11,7 @@
 
 <meta name="author" content="Fu-Yin Cherng" />
 
+<meta name="date" content="2017-01-01" />
 
 <title>Exporlatory Analysis on Job Advertisements</title>
 
@@ -169,12 +170,31 @@ $(document).ready(function () {
 
 <h1 class="title toc-ignore">Exporlatory Analysis on Job Advertisements</h1>
 <h4 class="author"><em>Fu-Yin Cherng</em></h4>
-<h4 class="date"><em>Oct. 12nd 2017</em></h4>
+<h4 class="date"><em>2017</em></h4>
 
 </div>
 
 
 <!-- rnb-text-begin -->
+<div id="about" class="section level1">
+<h1>About</h1>
+</div>
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
+</div>
+<div id="related-works" class="section level1">
+<h1>Related Works</h1>
+</div>
+<div id="research-goal-and-questions" class="section level1">
+<h1>Research Goal and Questions</h1>
+</div>
+<div id="descriptive-analysis-on-job-ads" class="section level1">
+<h1>Descriptive Analysis on Job Ads</h1>
+<div id="data-collection" class="section level2">
+<h2>Data Collection</h2>
+</div>
+<div id="job-title-analysis-and-normalization" class="section level2">
+<h2>Job Title Analysis and Normalization</h2>
 <p>This is an <a href="http://rmarkdown.rstudio.com">R Markdown</a> Notebook. When you execute code within the notebook, the results appear beneath the code.</p>
 <p>Try executing this chunk by clicking the <em>Run</em> button within the chunk or by placing your cursor inside it and pressing <em>Cmd+Shift+Enter</em>.</p>
 <!-- rnb-text-end -->
@@ -195,9 +215,33 @@ print(a+b)</code></pre>
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the <em>Preview</em> button or press <em>Cmd+Shift+K</em> to preview the HTML file).</p>
+<div id="result-and-discussion-of-job-title-analysis-on-it-jobs" class="section level3">
+<h3>Result and Discussion of Job Title Analysis on IT Jobs</h3>
+</div>
+</div>
+<div id="job-description-of-it-jobs-analysis" class="section level2">
+<h2>Job Description of IT Jobs Analysis</h2>
+<div id="result-and-discussion-of-job-description-analysis" class="section level3">
+<h3>Result and Discussion of Job Description Analysis</h3>
+</div>
+</div>
+<div id="new-skills-in-it-job-market-in-2017" class="section level2">
+<h2>New skills in IT job market in 2017</h2>
+</div>
+</div>
+<div id="comparisons-with-changes-in-google-trends" class="section level1">
+<h1>Comparisons with Changes in Google Trends</h1>
+<div id="google-trends-difference-of-percentage" class="section level2">
+<h2>Google Trends: Difference of Percentage</h2>
+</div>
+</div>
+<div id="summary" class="section level1">
+<h1>Summary</h1>
+<p>In this paper, we collected over 150,000 job ads of IT job market that were posted in the online job board. We used the standard procedure of Natural Language Processing to clean texts in job ads. Using the cleaned job ads, we extracted skill terms by build n-grams model and the prede ned list of skills. We calculated the frequency and TF-IDF of each n-gram, and by observing how these values change over time, we identi ed several trending words and skills in current IT job market. Furthermore, we also investigated whether people are aware of these trending skills in the job market by looking the Google Trends data of these skills. We found that some skills are trending in both job market and Google Trends, like DevOps and SWA, while some skills performed di erently in Google Trends and job ads, like Microsoft and AMP. We believe that these ndings give us a good starting point to investigate structural unemployment from the perspective of data mining. In the end, we plan to continue collecting online job ads to re ne the current dataset and to strengthen the current ndings. After we collect a larger set of job ads, we would like to apply methods from time series analysis and forecasting to identify trending skills from historical information.</p>
 <!-- rnb-text-end -->
+</div>
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiRXhwb3JsYXRvcnkgQW5hbHlzaXMgb24gSm9iIEFkdmVydGlzZW1lbnRzIgpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sKYXV0aG9yOiBGdS1ZaW4gQ2hlcm5nCmRhdGU6IE9jdC4gMTJuZCAyMDE3Ci0tLQoKCgpUaGlzIGlzIGFuIFtSIE1hcmtkb3duXShodHRwOi8vcm1hcmtkb3duLnJzdHVkaW8uY29tKSBOb3RlYm9vay4gV2hlbiB5b3UgZXhlY3V0ZSBjb2RlIHdpdGhpbiB0aGUgbm90ZWJvb2ssIHRoZSByZXN1bHRzIGFwcGVhciBiZW5lYXRoIHRoZSBjb2RlLiAKClRyeSBleGVjdXRpbmcgdGhpcyBjaHVuayBieSBjbGlja2luZyB0aGUgKlJ1biogYnV0dG9uIHdpdGhpbiB0aGUgY2h1bmsgb3IgYnkgcGxhY2luZyB5b3VyIGN1cnNvciBpbnNpZGUgaXQgYW5kIHByZXNzaW5nICpDbWQrU2hpZnQrRW50ZXIqLiAKCmBgYHtyfQpwbG90KGNhcnMpCmBgYAoKQWRkIGEgbmV3IGNodW5rIGJ5IGNsaWNraW5nIHRoZSAqSW5zZXJ0IENodW5rKiBidXR0b24gb24gdGhlIHRvb2xiYXIgb3IgYnkgcHJlc3NpbmcgKkNtZCtPcHRpb24rSSouCgoKYGBge3B5dGhvbn0KYSA9IDEKYiA9IDIKcHJpbnQoYStiKQpgYGAKCldoZW4geW91IHNhdmUgdGhlIG5vdGVib29rLCBhbiBIVE1MIGZpbGUgY29udGFpbmluZyB0aGUgY29kZSBhbmQgb3V0cHV0IHdpbGwgYmUgc2F2ZWQgYWxvbmdzaWRlIGl0IChjbGljayB0aGUgKlByZXZpZXcqIGJ1dHRvbiBvciBwcmVzcyAqQ21kK1NoaWZ0K0sqIHRvIHByZXZpZXcgdGhlIEhUTUwgZmlsZSkuCg==</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiRXhwb3JsYXRvcnkgQW5hbHlzaXMgb24gSm9iIEFkdmVydGlzZW1lbnRzIgpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sKYXV0aG9yOiBGdS1ZaW4gQ2hlcm5nCmRhdGU6IDIwMTcKLS0tCgojIEFib3V0CgojIEludHJvZHVjdGlvbgoKIyBSZWxhdGVkIFdvcmtzCgojIFJlc2VhcmNoIEdvYWwgYW5kIFF1ZXN0aW9ucwoKCiMgRGVzY3JpcHRpdmUgQW5hbHlzaXMgb24gSm9iIEFkcwoKIyMgRGF0YSBDb2xsZWN0aW9uCgojIyBKb2IgVGl0bGUgQW5hbHlzaXMgYW5kIE5vcm1hbGl6YXRpb24KVGhpcyBpcyBhbiBbUiBNYXJrZG93bl0oaHR0cDovL3JtYXJrZG93bi5yc3R1ZGlvLmNvbSkgTm90ZWJvb2suIFdoZW4geW91IGV4ZWN1dGUgY29kZSB3aXRoaW4gdGhlIG5vdGVib29rLCB0aGUgcmVzdWx0cyBhcHBlYXIgYmVuZWF0aCB0aGUgY29kZS4gCgpUcnkgZXhlY3V0aW5nIHRoaXMgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpSdW4qIGJ1dHRvbiB3aXRoaW4gdGhlIGNodW5rIG9yIGJ5IHBsYWNpbmcgeW91ciBjdXJzb3IgaW5zaWRlIGl0IGFuZCBwcmVzc2luZyAqQ21kK1NoaWZ0K0VudGVyKi4gCgpgYGB7cn0KcGxvdChjYXJzKQpgYGAKCkFkZCBhIG5ldyBjaHVuayBieSBjbGlja2luZyB0aGUgKkluc2VydCBDaHVuayogYnV0dG9uIG9uIHRoZSB0b29sYmFyIG9yIGJ5IHByZXNzaW5nICpDbWQrT3B0aW9uK0kqLgoKCmBgYHtweXRob259CmEgPSAxCmIgPSAyCnByaW50KGErYikKYGBgCgpXaGVuIHlvdSBzYXZlIHRoZSBub3RlYm9vaywgYW4gSFRNTCBmaWxlIGNvbnRhaW5pbmcgdGhlIGNvZGUgYW5kIG91dHB1dCB3aWxsIGJlIHNhdmVkIGFsb25nc2lkZSBpdCAoY2xpY2sgdGhlICpQcmV2aWV3KiBidXR0b24gb3IgcHJlc3MgKkNtZCtTaGlmdCtLKiB0byBwcmV2aWV3IHRoZSBIVE1MIGZpbGUpLgoKIyMjIFJlc3VsdCBhbmQgRGlzY3Vzc2lvbiBvZiBKb2IgVGl0bGUgQW5hbHlzaXMgb24gSVQgSm9icwoKIyMgSm9iIERlc2NyaXB0aW9uIG9mIElUIEpvYnMgQW5hbHlzaXMKCiMjIyBSZXN1bHQgYW5kIERpc2N1c3Npb24gb2YgSm9iIERlc2NyaXB0aW9uIEFuYWx5c2lzCgojIyBOZXcgc2tpbGxzIGluIElUIGpvYiBtYXJrZXQgaW4gMjAxNwoKIyBDb21wYXJpc29ucyB3aXRoIENoYW5nZXMgaW4gR29vZ2xlIFRyZW5kcwoKIyMgR29vZ2xlIFRyZW5kczogRGlmZmVyZW5jZSBvZiBQZXJjZW50YWdlCgojIFN1bW1hcnkKSW4gdGhpcyBwYXBlciwgd2UgY29sbGVjdGVkIG92ZXIgMTUwLDAwMCBqb2IgYWRzIG9mIElUIGpvYiBtYXJrZXQgdGhhdCB3ZXJlIHBvc3RlZCBpbiB0aGUgb25saW5lIGpvYiBib2FyZC4gV2UgdXNlZCB0aGUgc3RhbmRhcmQgcHJvY2VkdXJlIG9mIE5hdHVyYWwgTGFuZ3VhZ2UgUHJvY2Vzc2luZyB0byBjbGVhbiB0ZXh0cyBpbiBqb2IgYWRzLiBVc2luZyB0aGUgY2xlYW5lZCBqb2IgYWRzLCB3ZSBleHRyYWN0ZWQgc2tpbGwgdGVybXMgYnkgYnVpbGQgbi1ncmFtcyBtb2RlbCBhbmQgdGhlIHByZWRlIG5lZCBsaXN0IG9mIHNraWxscy4gV2UgY2FsY3VsYXRlZCB0aGUgZnJlcXVlbmN5IGFuZCBURi1JREYgb2YgZWFjaCBuLWdyYW0sIGFuZCBieSBvYnNlcnZpbmcgaG93IHRoZXNlIHZhbHVlcyBjaGFuZ2Ugb3ZlciB0aW1lLCB3ZSBpZGVudGkgZWQgc2V2ZXJhbCB0cmVuZGluZyB3b3JkcyBhbmQgc2tpbGxzIGluIGN1cnJlbnQgSVQgam9iIG1hcmtldC4gRnVydGhlcm1vcmUsIHdlIGFsc28gaW52ZXN0aWdhdGVkIHdoZXRoZXIgcGVvcGxlIGFyZSBhd2FyZSBvZiB0aGVzZSB0cmVuZGluZyBza2lsbHMgaW4gdGhlIGpvYiBtYXJrZXQgYnkgbG9va2luZyB0aGUgR29vZ2xlIFRyZW5kcyBkYXRhIG9mIHRoZXNlIHNraWxscy4gV2UgZm91bmQgdGhhdCBzb21lIHNraWxscyBhcmUgdHJlbmRpbmcgaW4gYm90aCBqb2IgbWFya2V0IGFuZCBHb29nbGUgVHJlbmRzLCBsaWtlIERldk9wcyBhbmQgU1dBLCB3aGlsZSBzb21lIHNraWxscyBwZXJmb3JtZWQgZGkgZXJlbnRseSBpbiBHb29nbGUgVHJlbmRzIGFuZCBqb2IgYWRzLCBsaWtlIE1pY3Jvc29mdCBhbmQgQU1QLiBXZSBiZWxpZXZlIHRoYXQgdGhlc2UgIG5kaW5ncyBnaXZlIHVzIGEgZ29vZCBzdGFydGluZyBwb2ludCB0byBpbnZlc3RpZ2F0ZSBzdHJ1Y3R1cmFsIHVuZW1wbG95bWVudCBmcm9tIHRoZSBwZXJzcGVjdGl2ZSBvZiBkYXRhIG1pbmluZy4gSW4gdGhlIGVuZCwgd2UgcGxhbiB0byBjb250aW51ZSBjb2xsZWN0aW5nIG9ubGluZSBqb2IgYWRzIHRvIHJlIG5lIHRoZSBjdXJyZW50IGRhdGFzZXQgYW5kIHRvIHN0cmVuZ3RoZW4gdGhlIGN1cnJlbnQgIG5kaW5ncy4gQWZ0ZXIgd2UgY29sbGVjdCBhIGxhcmdlciBzZXQgb2Ygam9iIGFkcywgd2Ugd291bGQgbGlrZSB0byBhcHBseSBtZXRob2RzIGZyb20gdGltZSBzZXJpZXMgYW5hbHlzaXMgYW5kIGZvcmVjYXN0aW5nIHRvIGlkZW50aWZ5IHRyZW5kaW5nIHNraWxscyBmcm9tIGhpc3RvcmljYWwgaW5mb3JtYXRpb24uCgo=</div>
 
 
 

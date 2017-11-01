@@ -2,11 +2,23 @@
 title: "Exporlatory Analysis on Job Advertisements"
 output: html_notebook
 author: Fu-Yin Cherng
-date: Oct. 12nd 2017
+date: 2017
 ---
 
+# About
+
+# Introduction
+
+# Related Works
+
+# Research Goal and Questions
 
 
+# Descriptive Analysis on Job Ads
+
+## Data Collection
+
+## Job Title Analysis and Normalization
 This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
 
 Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
@@ -25,3 +37,19 @@ print(a+b)
 ```
 
 When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file).
+
+### Result and Discussion of Job Title Analysis on IT Jobs
+
+## Job Description of IT Jobs Analysis
+
+### Result and Discussion of Job Description Analysis
+
+## New skills in IT job market in 2017
+
+# Comparisons with Changes in Google Trends
+
+## Google Trends: Difference of Percentage
+
+# Summary
+In this paper, we collected over 150,000 job ads of IT job market that were posted in the online job board. We used the standard procedure of Natural Language Processing to clean texts in job ads. Using the cleaned job ads, we extracted skill terms by build n-grams model and the prede ned list of skills. We calculated the frequency and TF-IDF of each n-gram, and by observing how these values change over time, we identi ed several trending words and skills in current IT job market. Furthermore, we also investigated whether people are aware of these trending skills in the job market by looking the Google Trends data of these skills. We found that some skills are trending in both job market and Google Trends, like DevOps and SWA, while some skills performed di erently in Google Trends and job ads, like Microsoft and AMP. We believe that these  ndings give us a good starting point to investigate structural unemployment from the perspective of data mining. In the end, we plan to continue collecting online job ads to re ne the current dataset and to strengthen the current  ndings. After we collect a larger set of job ads, we would like to apply methods from time series analysis and forecasting to identify trending skills from historical information.
+
