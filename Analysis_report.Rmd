@@ -48,6 +48,12 @@ When you save the notebook, an HTML file containing the code and output will be 
 
 ## Job Description of IT Jobs Analysis
 
+**Year** | **# Job** | **# Unigram** | **Bigram** | **Trigram**
+--- | --- | --- | --- | --- |
+IT jobs - 2013 | 65,795 | 9,680 | 82,454 | 2,438,477
+IT jobs - 2017 | 13,757 | 2,825 | 5,176 | 274,738
+
+
 ### Result and Discussion of Job Description Analysis
 
 ## New skills in IT job market in 2017
